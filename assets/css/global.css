@@ -1,0 +1,75 @@
+/* cores */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*/
+:root {
+  --primary-color: #FD5D14;
+  --secondary-color: #CA4102;
+  --text-color: #333333;
+  --accent-color: #030F27;
+  --accent-overlay80: rgba(3, 15, 39, 0.8);
+  --white-color: #fff;
+  --white-transp-color: #ffffffCC;
+  --white-cold-color: #f1f1f1;
+  --default-content-width: 60%;
+}
+
+@media screen  and (max-width: 2000px) {
+  :root {
+    --default-content-width: 70%;
+  }
+}
+
+@media screen  and (max-width: 1550px) {
+  :root {
+    --default-content-width: 80%;
+  }
+}
+
+@media screen  and (max-width: 1370px) {
+  :root {
+    --default-content-width: 90%;
+  }
+}
+
+html * {
+  font-family: 'Montserrat';
+  transition: all 0.3s;
+  color: var(--white-color);
+}
+
+.btn-saiba-mais {
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 3px;
+}
+
+.btn-saiba-mais:hover {
+  background-color: var(--secondary-color);
+}
+
+.slider-navbutton::after {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--primary-color);
+  opacity: 0.6;
+  transition: all .3s ease;
+}
+
+.slider-navbutton:hover::after {
+  opacity: 1;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--white-color);
+  opacity: 0.4;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+  opacity: 1;
+}
